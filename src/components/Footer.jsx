@@ -2,6 +2,6 @@
 
 export default function Footer() {
   return (
-    <footer>🌍GBD©2023</footer>
+    <footer>🌍ComA©2023</footer>
   )
 }
