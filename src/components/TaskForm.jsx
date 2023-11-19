@@ -14,7 +14,7 @@ const TaskForm = ({ addTask, taskInput }) => {
           value={taskInput.value}
           onChange={handleInputChange} 
         />
-        <button id="addButton" onClick={addTask}>
+        <button className="addButton" onClick={addTask}>
           Agregar Tarea
         </button>
       </fieldset>

@@ -12,7 +12,7 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height:70vh;
+  min-height: 70vh;
   margin: 2rem;
 `;
 
@@ -20,7 +20,8 @@ const App = () => {
   const [taskInput, setTaskInput] = useState("");
   const [taskList, setTaskList] = useState([]);
   const [idCounter, setIdCounter] = useState(1);
-
+  const [editingTask, setEditingTask] = useState(null);
+  
   // Cargar tareas desde localStorage al montar el componente
   useEffect(() => {
     const storedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
@@ -51,7 +52,24 @@ const App = () => {
     setTaskList(updatedTaskList);
     setIdCounter(idCounter + 1);
   };
+ /****** funciones de editar y verificar, con ayuda de san chatgpt*/
+ const editTask = (index) => {
+  const taskToEdit = taskList[index];
+  const editedTaskName = window.prompt("Editar tarea", taskToEdit.name);
 
+  if (editedTaskName !== null) {
+    const updatedTaskList = taskList.map((task, i) =>
+      i === index ? { ...task, name: editedTaskName } : task
+    );
+    setTaskList(updatedTaskList);
+  }
+};
+const verifyTask = (index) => {
+  const updatedTaskList = taskList.map((task, i) =>
+    i === index ? { ...task, completed: !task.completed } : task
+  );
+  setTaskList(updatedTaskList);
+};
   return (
     <>
       <Header />
@@ -60,7 +78,12 @@ const App = () => {
           addTask={addTask}
           taskInput={{ value: taskInput, onChange: setTaskInput }}
         />
-        <TaskList tasks={taskList} removeTask={removeTask} />
+         <TaskList
+          tasks={taskList}
+          removeTask={removeTask}
+          editTask={editTask}
+          verifyTask={verifyTask}
+        />
       </Wrapper>
       <Footer />
     </>

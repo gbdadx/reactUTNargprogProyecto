@@ -60,7 +60,7 @@ input:hover {
   box-shadow: 0 0 5px gray;
 }
 
-button {
+.addButton {
   background-color:#566246;
   color: white;
   border: none;
@@ -68,11 +68,11 @@ button {
   padding: 5px 10px;
   cursor: pointer;
 }
-#addButton{
+.addButton{
 width:10rem;
 }
 
-button:hover {
+.addButton:hover {
   background-color: #566246;
 }
 
@@ -113,11 +113,25 @@ span{
 li:hover {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-.remover{
+.remove{
   position:absolute;
   right:0.5rem;
   top:0;
   bottom:0;
+}
+.verify{
+  position:absolute;
+  right:3rem;
+  top:0;
+  bottom:0;
+}
+.edit{
+  position:absolute;
+  right:6rem;
+  top:0;
+  bottom:0;
+  color:#000;
+  font-weight: 600;
 }
 
 footer {

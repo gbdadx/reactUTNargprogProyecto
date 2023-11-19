@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header>
      <h1>Lista de tareas</h1>
-      <button className="cambiaColor" onClick={cambiarC}>
+      <button className="addButton cambiaColor" onClick={cambiarC}>
         Click!
       </button>
     </header>

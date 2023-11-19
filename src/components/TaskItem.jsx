@@ -1,16 +1,25 @@
 //TaskItem
-import './TaskItem.css'
+import './TaskItem.css';
 
-const TaskItem = ({ task, index, removeTask }) => {
-  
-
+const TaskItem = ({ task, index, removeTask, verifyTask,  editTask}) => {
+  const taskItemStyle = {
+    textDecoration: task.completed ? 'line-through' : 'none',
+    backgroundColor: task.completed ? '#eee' : 'transparent',
+  };
   return (
-    <li width="100%">
-      <span id="tarea">
-      {task.name}</span>
-      <span id="borrar">
-        <button className='remover' onClick={() => removeTask(index)}>❌</button>
-      </span>
+    <li className="task-item" style={taskItemStyle}>
+      <div className="task-name">{task.name}</div>
+      <div className="task-actions">
+        <button className="edit" onClick={() => editTask(index)}>
+          🖊
+        </button>
+        <button className="remove" onClick={() => removeTask(index)}>
+          ❌
+        </button>
+        <button className="verify" onClick={() => verifyTask(index)}>
+          ✔️
+        </button>
+      </div>
     </li>
   );
 };
