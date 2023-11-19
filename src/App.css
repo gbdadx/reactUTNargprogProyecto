@@ -92,8 +92,9 @@ li {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   height: 3rem;
-  background-color: #D8DAD3;
+  background-color: #eee;
   color: #FE572F;
+  font-weight: 500;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
