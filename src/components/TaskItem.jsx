@@ -5,7 +5,7 @@ const TaskItem = ({ task, index, removeTask }) => {
   
 
   return (
-    <li >
+    <li width="100%">
       <span id="tarea">
       {task.name}</span>
       <span id="borrar">

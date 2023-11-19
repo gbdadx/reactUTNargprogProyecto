@@ -7,7 +7,7 @@
   align-items: center;
   font-family: system-ui !important;
   background-color: #D8DAD3;
-min-height: 70vh;
+min-height: 100vh;
 }
 
 h1 {
@@ -20,7 +20,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  height: 20vh;
+  height: 14vh;
   margin-bottom: 1rem;
   width: 100%;
   padding: 2rem;
@@ -28,23 +28,26 @@ header {
 }
 
 form {
-  width: 100%;
+  max-width: 100%;
+  min-height: auto;
 
 }
 
-fieldset {
+#fieldset {
   border: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  width:100%;
+  
 }
 
-input {
+#taskInput {
   padding: 5px;
   border: 1px solid #566246;
   border-radius: 5px;
   color: #566246;
-  width: 70%;
+  min-width: 85%!important;
   font-size: 2rem;
   border: 1px solid silver;
 }
@@ -65,6 +68,9 @@ button {
   padding: 5px 10px;
   cursor: pointer;
 }
+#addButton{
+width:10rem;
+}
 
 button:hover {
   background-color: #566246;
@@ -77,6 +83,7 @@ ul {
   justify-content: flex-start;
   width: 100%;
   margin: 2rem 0rem;
+  min-height: 70%;
 
 }
 
@@ -98,12 +105,19 @@ li {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  position:relative;
 }
 span{
   align-self: center;
 }
 li:hover {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.remover{
+  position:absolute;
+  right:0.5rem;
+  top:0;
+  bottom:0;
 }
 
 footer {
@@ -120,7 +134,7 @@ footer {
   height: 2.5rem;
   background-color: #D8DAD3;
   padding: 10px;
-  height: 10vh;
+  height: 9vh;
 }
 
 /**cambia color */
