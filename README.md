@@ -21,7 +21,7 @@ Estilos
 Se utiliza styled-components para el manejo de estilos. La aplicación tiene un diseño simple y responsivo.
 
 Uso
-Clona este repositorio: git clone https://github.com/tu-usuario/tu-repo.git
+Clona este repositorio: git clone https://github.com/tu-usuario/tu-repo.git (tambien puedes descargar el archivo comprimido)
 Instala las dependencias: npm install
 Ejecuta la aplicación: npm run dev
 Contribuciones
@@ -29,3 +29,5 @@ Contribuciones
 
 Licencia
 Este proyecto está bajo la Licencia MIT.
+
+
