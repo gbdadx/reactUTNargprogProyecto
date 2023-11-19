@@ -39,8 +39,8 @@ const App = () => {
     setTaskList(updatedTaskList);
   };
 
-  const addTask = () => {
-    event.preventDefault();
+  const addTask = (e) => {
+    e.preventDefault();
     const trimmedTaskInput = taskInput.trim();
     if (trimmedTaskInput === "") return alert("Tarea vacía");
     const updatedTaskList = [
