@@ -1,9 +1,13 @@
-# React + Vite
+# proyecto integrador react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+lista de tareas creada con componentes funcionales y Vite
 
-Currently, two official plugins are available:
+para iniciar , descarga la carpeta, 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# saludoUtn
+abrir el proyecto con un terminal (vsc, git , powershel)
+
+* npm install
+
+* npm run code
+
+el primero instala las carpetas de node, el segundo abre el servidor... hacer click y se abrira en el navegador.
