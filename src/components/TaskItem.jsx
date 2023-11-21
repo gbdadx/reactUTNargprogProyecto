@@ -11,7 +11,7 @@ const TaskItem = ({ task, index, removeTask, verifyTask,  editTask}) => {
       <div className="task-name">{task.name}</div>
       <div className="task-actions">
         <button className="edit" onClick={() => editTask(index)}>
-          🖊
+          🎨  
         </button>
         <button className="remove" onClick={() => removeTask(index)}>
           ❌
